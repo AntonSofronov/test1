@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // const number = 5;
 // console.log(number);
 
@@ -74,8 +75,12 @@ const numberOfFilms = prompt('Сколько фильмов вы уже посм
 
 
 const personalMovieDB = {
-
-}
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
 	
 
 
