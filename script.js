@@ -69,6 +69,13 @@ const storeDescription = {
 
 // const isCheked = true;
 // 	  isClose = true;  
+
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+
+
+const personalMovieDB = {
+
+}
 	
 
 
