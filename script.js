@@ -82,6 +82,8 @@ const personalMovieDB = {
 	privat: false
 };
 	
+const a = prompt('один из последних просмотренных фильмов?', ''),
+
 
 
 
