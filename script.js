@@ -59,7 +59,7 @@ const storeDescription = {
 
 //  `` - бэктики
 
-// Операторы................................................................
+// Операторы.....................................................................
 
 //  +4 - унарный плюс
 
@@ -74,29 +74,64 @@ const storeDescription = {
 // const isCheked = true;
 // 	  isClose = true;  
 
-const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false
-};
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false
+// };
 	
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', ''),
+//       b = prompt('На сколько оцените его?', ''),
+//       c = prompt('Один из последних просмотренных фильмов?', ''),
+//       d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
+
+// Условия...................................................................................
+
+// if (4 == 4) {
+// 	console.log('Ok!');
+// } else {
+// 	console.log('No!');
+// }
 
 
+// num = 51;
 
+// if (num < 50) {
+// 	console.log('No!');
+// } else if (num > 100) {
+// 	console.log('To much!');
+// } else {
+// 	console.log('Ok!');
+// }
+
+// (num == 50) ? console.log('Ok!') : console.log('No!');   // Тернарный оператор
+
+// num = 50;
+
+// switch (num) {
+// 	case 49:
+// 		console.log('No!');
+// 		break;
+// 	case 100:
+// 		console.log('To much!');
+// 		break;
+// 	case 50:
+// 		console.log('Ok!');
+// 		break;
+// 	default:
+// 		console.log('Ooops!');
+// 		break;
+// }
 
 
 
