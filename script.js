@@ -133,20 +133,321 @@ const storeDescription = {
 // 		break;
 // }
 
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// if (hamburger === 3 && cola === 1 && fries) {
+// 	console.log('Все сыты!');
+// } else {
+// 	console.log('Мы уходим!');
+// }
+
+
+// Оператор && всегда возвращает первым ложное значение, если оно есть и дальше код уже не идёт.
+// Если все значения верны, код идет до конца и возвращается значение последнего аргумента.
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 3;
+
+
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+// 	console.log('Все довольны!');
+// } else {
+// 	console.log('Мы уходим!');
+// }
+
+// let johnReport, mikeReport, samReport, kateReport = 'done';
+
+// console.log(johnReport || mikeReport || samReport || kateReport);
+
+
+// Циклы ..................................................................................
+
+// let num = 50;
+
+// while (num <= 55) {
+// 	console.log(num);
+// 	num++;
+// }
+
+// do {
+// 	console.log(num);
+// 	num++;
+// }
+// while (num <= 55);
+
+// for (let i = 1; i <= 11; i++) {
+// 	if (i === 6) {
+// 		// break;
+// 		continue; //пропускает шаг, но не останавливает цикл.
+// 	}
+
+// 	console.log(i);
+// }
+
+// for (let i = 0; i < 5; i++) {
+// 	console.log(i);
+// 	for (let j = 0; j < 5; j++) {
+// 		console.log(j);
+		
+// 	}
+// }
+
+// let result = '';
+// const lenght = 11;
+
+// for (let i = 1; i < lenght; i++) {
+
+// 	for (let j = 0; j < i; j++) {
+// 		result += '*';
+// 	}
+
+
+// 	result += '\n';
+// }
+
+
+// console.log(result);
+
+		
+// first: for (let i = 0; i < 5; i++) {
+// 		console.log(`First level: ${i}`);
+// 		for (let j = 0; j < 5; j++) {
+// 			console.log(`Second level: ${j}`);
+// 			for (let k = 0; k < 5; k++) {
+// 				if (k === 2) continue first;
+// 				console.log(`Third level: ${k}`);
+				
+// 		}
+			
+// 	}
+// }
+
+// let num = 5;
+
+// while (num <= 10) {
+// 	console.log(num);
+// 	num++;
+// }
+
+// for (let i = 20; i >= 10; i--) {
+// 		if (i === 13) {
+// 			break;
+// 		}
+			
+// 	console.log(i);
+// }
+
+
+// for (let i = 2; i <= 16; i++) {
+// 	    
+// 	}
+
+// let i = 2;
+// while (i <= 16) {
+// 	if (i % 2 === 0) {
+// 			        continue;
+// 			    } else {
+// 			        console.log(i);
+// 			    }
+
+// 	console.log(i);
+	
+// 	i++;
+// }
+
+
+// Практика 2. Применяем циклы....................................................................
+
+// const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+
+
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false
+// };
+	
+// for (let i = 0; i < 2; i++) {
+// 	const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его?', '');
+
+// 	if (a != null && b != null && a != '' && b != '' && a.length <50) {
+// 		personalMovieDB.movies[a] = b;	
+// 		console.log('Done!');
+// 	} else {
+// 		console.log('Error!');
+// 		i--;
+// 	}
+// }
+
+// if (personalMovieDB.count < 10) {
+// 	console.log('Просмотрено довольно мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 	console.log('Вы классический зритель');
+// } else if (personalMovieDB.count >= 30) {
+// 	console.log('Вы киноман');
+// } else {
+// 	console.log('Ошибка!');
+// }
+	
+
+	
+
+// console.log(personalMovieDB);
+
+
+// Функции......................................................................................................
+
+
+// function showFirstMessage(text) {
+// 	console.log(text);
+// }
+
+// showFirstMessage('Hey!');
+
+// function calc(a, b) {
+// 	return (a + b);
+	
+// }
+// console.log(calc(4,3));
+
+// const usdCurr = 80;
+
+// function convert(amount, curr) {
+// 	console.log(curr * amount);
+// }
+// convert(500, usdCurr);
+
+// function userName(name) {
+// 	return name;
+// }
+// console.log(userName('Антон'));
 
 
 
+// Методы и свойства строк и чисел.......................................................................
+
+
+// const str = 'test';
+
+// console.log(str.length);
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let fruit = 'Some fruit';
+
+// console.log(fruit.indexOf(' '));
+
+
+// Практика-3. Функции....................................................................................
+
+// let numberOfFilms;
+
+// function start() {
+// 	numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+// 	while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+// 		numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// 	}
+// }
+
+// start();
+
+
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: true
+// };
+	
+
+
+// function rememberMyFilms() {
+// 	for (let i = 0; i < 2; i++) {
+// 		const a = prompt('Один из последних просмотренных фильмов?', ''),
+// 			  b = prompt('На сколько оцените его?', '');
+	
+// 		if (a != null && b != null && a != '' && b != '' && a.length <50) {
+// 			personalMovieDB.movies[a] = b;	
+// 			console.log('Done!');
+// 		} else {
+// 			console.log('Error!');
+// 			i--;
+// 		}
+// 	}
+// }
+
+// rememberMyFilms();
 
 
 
+// function detectPersonalLevel() {
+// 	if (personalMovieDB.count < 10) {
+// 		console.log('Просмотрено довольно мало фильмов');
+// 	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 		console.log('Вы классический зритель');
+// 	} else if (personalMovieDB.count >= 30) {
+// 		console.log('Вы киноман');
+// 	} else {
+// 		console.log('Ошибка!');
+// 	}
+// }
+
+// detectPersonalLevel();
+	
+// function showMyDB(hidden) {
+// 	if (!hidden) {
+// 		console.log(personalMovieDB);
+// 	}
+// }
+	
+// showMyDB(personalMovieDB.privat);
+
+// function writeYourGenres() {
+// 	for (let i = 1; i <= 3; i++) {
+// 		personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+		
+// 	}
+// }
+
+// writeYourGenres();
 
 
+// Задачи:
+
+// 1) Создайте функцию, которая будет вычислять объем и площадь полной поверхности куба (тоже базовая математика, иногда используется в создании анимаций). Эта функция принимает в себя целое число со значением длины ребра куба. Ответ выведите в формате строки, который изображен в примерах.
+
+// Если в функцию попал неправильный аргумент или вычислить значения невозможно - вернуть строку "При вычислении произошла ошибка"
+
+// НЕ ИСПОЛЬЗУЙТЕ ОПЕРАТОР СТЕПЕНИ ** - в онлайн среде браузера он не работает и тесты будут ломаться. Это из-за того, что этот оператор из более нового стандарта, чем тут доступен.
+
+// Примеры:
+
+// calculateVolumeAndArea(5)  => 'Объем куба: 125, площадь всей поверхности: 150'
+
+// calculateVolumeAndArea(15)  => 'Объем куба: 3375, площадь всей поверхности: 1350'
+
+// calculateVolumeAndArea(15.5)  => 'При вычислении произошла ошибка'
+
+// calculateVolumeAndArea('15')  => 'При вычислении произошла ошибка'
+
+// calculateVolumeAndArea(-15)  => 'При вычислении произошла ошибка'
 
 
+function calculateVolumeAndArea(h) {
+	if (let square = 6 * h * h) {
+		console.log(`площадь всей поверхности ${s}`);
+	}
+}
 
 
-
-
-
-
-
+console.log(calculateVolumeAndArea(15));
